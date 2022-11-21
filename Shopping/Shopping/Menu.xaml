@@ -5,6 +5,24 @@
     xmlns:views="clr-namespace:Shopping.Views"
     x:Class="Shopping.Menu">
 
-    <ShellContent Title="Lojas" Icon="MenuIconStore" ContentTemplate="{DataTemplate views:Stores}"/>
+     <Shell.FlyoutHeader>
+        <Grid Padding="0, 25" BackgroundColor="{StaticResource PrimaryColor}" ColumnDefinitions="1*,2*" RowDefinitions="Auto, Auto">
+            <Image Source="BagWhite" Grid.RowSpan="2" />
+            <Label Text="Bem vindo! ao" Grid.Column="1" Style="{StaticResource MenuHeaderLabel}" />
+            <Image Source="LogoWhite" HorizontalOptions="Start" Grid.Column="1" Grid.Row="1" />
+        </Grid>
+    </Shell.FlyoutHeader>
+    <FlyoutItem Title="Principais" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Lojas" Icon="MenuIconStore" ContentTemplate="{DataTemplate views:Stores}" />
+        <ShellContent Title="Restaurantes" Icon="MenuIconRestaurant"  />
+        <ShellContent Title="Cinema" Icon="MenuIconCinema"  />
+        <ShellContent Title="Ticket" Icon="MenuIconTicket"  />
+    </FlyoutItem>
+    
+    <ShellContent Title="Novidades" Icon="MenuIconNews"  />
+    <!--<ShellContent Title="Como chegar" Icon="MenuIconMaps" ContentTemplate="{DataTemplate views:Stores}" />-->
+    <MenuItem Text="Como chegar" IconImageSource="MenuIconMaps"  />
+    <ShellContent Title="Wifi" Icon="MenuIconWifi"  />
+    
 </Shell>
 
