@@ -4,14 +4,14 @@
              x:Class="Shopping.App">
     <Application.Resources>
         <ResourceDictionary>
-          <Color x:Key="White">#FFFFFF</Color>
+            <Color x:Key="White">#FFFFFF</Color>
             <Color x:Key="Black">#000000</Color>
             <Color x:Key="LightGray">#F9F9F9</Color>
-            
+
             <Color x:Key="TextPrimaryColor">#000000</Color>
             <Color x:Key="TextSecondColor">#A0A0A0</Color>
             <Color x:Key="BorderColor">#707070</Color>
-            
+
             <Color x:Key="PrimaryColor">#F86237</Color>
 
             <Color x:Key="SuccessColor">#1BAB42</Color>
@@ -63,7 +63,7 @@
                 <Setter Property="BorderWidth" Value="1" />
                 <Setter Property="CornerRadius" Value="0" />
             </Style>
-            
+
             <Style TargetType="Line">
                 <Setter Property="Stroke" Value="#707070" />
                 <Setter Property="StrokeDashArray" Value="3,3" />

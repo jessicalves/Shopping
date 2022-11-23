@@ -11,14 +11,25 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <FlexLayout JustifyContent="SpaceBetween">
-                <Entry Text="{Binding SearchWord}" Placeholder="Pesquisa" BackgroundColor="LightGray" WidthRequest="310" HorizontalTextAlignment="Center" Margin="5,0,0,0"/>
-                <Button Command="{Binding SearchCommand}" Text="OK"/>
-            </FlexLayout>
+            <Grid ColumnDefinitions="*,70" RowDefinitions="50">
+                <Entry Text="{Binding SearchWord}" Placeholder="Pesquisa"/>
+                <Button Command="{Binding SearchCommand}" Text="OK" Grid.Column="1"/>
+            </Grid>
             <CollectionView ItemsSource="{Binding Establishments}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Label Text="{Binding Name}" TextColor="{StaticResource TextPrimaryColor}"/>
+                        <ContentView Padding="10">
+                            <Frame BorderColor="{StaticResource BorderColor}" Padding="1" CornerRadius="0">
+                                <Grid ColumnDefinitions="1*,1, 2*">
+                                    <Image HeightRequest="80" Source="{Binding Logo}" Margin="10"/>
+                                    <BoxView Grid.Column="1" BackgroundColor="{StaticResource BorderColor}"/>
+                                    <StackLayout Grid.Column="2" Margin="10">
+                                        <Label Text="{Binding Name}" TextColor="{StaticResource TextPrimaryColor}"/>
+                                        <Label Text="{Binding Description}" MaxLines="3" TextColor="{StaticResource TextPrimaryColor}"/>
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </ContentView>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
