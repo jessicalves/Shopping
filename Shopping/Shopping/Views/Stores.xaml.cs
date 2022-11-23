@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Shopping.ViewModels;
 using Xamarin.Forms;
 
 namespace Shopping.Views
@@ -10,6 +10,8 @@ namespace Shopping.Views
         public Stores()
         {
             InitializeComponent();
+
+            //BindingContext = new StoresViewModel();
         }
     }
 }
