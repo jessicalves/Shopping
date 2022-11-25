@@ -5,7 +5,7 @@
     xmlns:views="clr-namespace:Shopping.Views"
     x:Class="Shopping.Menu">
 
-     <Shell.FlyoutHeader>
+    <Shell.FlyoutHeader>
         <Grid Padding="0, 25" BackgroundColor="{StaticResource PrimaryColor}" ColumnDefinitions="1*,2*" RowDefinitions="Auto, Auto">
             <Image Source="BagWhite" Grid.RowSpan="2" />
             <Label Text="Bem vindo! ao" Grid.Column="1" Style="{StaticResource MenuHeaderLabel}" />
@@ -14,15 +14,15 @@
     </Shell.FlyoutHeader>
     <FlyoutItem Title="Principais" FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Title="Lojas" Icon="MenuIconStore" ContentTemplate="{DataTemplate views:Stores}" />
-        <ShellContent Title="Restaurantes" Icon="MenuIconRestaurant"  />
-        <ShellContent Title="Cinema" Icon="MenuIconCinema"  />
-        <ShellContent Title="Ticket" Icon="MenuIconTicket"  />
+        <ShellContent Title="Restaurantes" Icon="MenuIconRestaurant" ContentTemplate="{DataTemplate views:Stores}" />
+        <ShellContent Title="Cinema" Icon="MenuIconCinema" ContentTemplate="{DataTemplate views:Stores}" />
+        <ShellContent Title="Ticket" Icon="MenuIconTicket" ContentTemplate="{DataTemplate views:Stores}" />
     </FlyoutItem>
-    
-    <ShellContent Title="Novidades" Icon="MenuIconNews"  />
-    <!--<ShellContent Title="Como chegar" Icon="MenuIconMaps" ContentTemplate="{DataTemplate views:Stores}" />-->
-    <MenuItem Text="Como chegar" IconImageSource="MenuIconMaps"  />
-    <ShellContent Title="Wifi" Icon="MenuIconWifi"  />
-    
+
+    <ShellContent Title="Novidades" Icon="MenuIconNews" ContentTemplate="{DataTemplate views:Stores}" />
+    <ShellContent Title="Como chegar" Icon="MenuIconMaps" ContentTemplate="{DataTemplate views:Stores}" />
+    <ShellContent Title="Wifi" Icon="MenuIconWifi" ContentTemplate="{DataTemplate views:Stores}" />
+    <ShellContent Title="Detail" Icon="MenuIconWifi" ContentTemplate="{DataTemplate views:EstablishmentDetail}" />
+
 </Shell>
 
