@@ -1,3 +1,3 @@
 # Shopping
 
-App em Xamarin Forms
+App usando Xamarin Forms
