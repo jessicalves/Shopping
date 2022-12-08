@@ -14,6 +14,7 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -30,6 +31,8 @@
     <None Remove="Libraries\Helpers\" />
     <None Remove="Libraries\Helpers\MVVM\" />
     <None Remove="Refractored.MvvmHelpers" />
+    <None Remove="Libraries\Converters\" />
+    <None Remove="Newtonsoft.Json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -41,11 +44,15 @@
     <Folder Include="Services\" />
     <Folder Include="Libraries\Helpers\" />
     <Folder Include="Libraries\Helpers\MVVM\" />
+    <Folder Include="Libraries\Converters\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Libraries\Fonts\Montserrat-Bold.ttf" />
     <EmbeddedResource Include="Libraries\Fonts\Montserrat-Light.ttf" />
     <EmbeddedResource Include="Libraries\Fonts\Montserrat-Regular.ttf" />
     <EmbeddedResource Include="Libraries\Fonts\Montserrat-SemiBold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Restaurants.cs" />
   </ItemGroup>
 </Project>

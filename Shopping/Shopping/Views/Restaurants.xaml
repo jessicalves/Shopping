@@ -2,10 +2,10 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-        xmlns:enums="clr-namespace:Shopping.Libraries.Enums"
     xmlns:viewModels="clr-namespace:Shopping.ViewModels"
-    x:Name="StoresPage"
-    x:Class="Shopping.Views.Stores">
+    xmlns:enums="clr-namespace:Shopping.Libraries.Enums"
+    x:Name="RestaurantsPage"
+    x:Class="Shopping.Views.Restaurants">
 
     <Shell.TitleView>
         <ContentView>
@@ -14,11 +14,11 @@
     </Shell.TitleView>
 
     <ContentPage.BindingContext>
-        <viewModels:StoresViewModel>
+        <viewModels:RestaurantsViewModel>
             <x:Arguments>
-                <enums:EstablishmentType>Store</enums:EstablishmentType>
+                <enums:EstablishmentType>Restaurant</enums:EstablishmentType>
             </x:Arguments>
-        </viewModels:StoresViewModel>
+        </viewModels:RestaurantsViewModel>
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
@@ -35,7 +35,7 @@
                         <ContentView Padding="10">
                             <Frame BorderColor="{StaticResource BorderColor}" Padding="1" CornerRadius="0">
                                 <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding Source={x:Reference StoresPage}, Path=BindingContext.DetailCommand}" CommandParameter="{Binding .}"/>
+                                    <TapGestureRecognizer Command="{Binding Source={x:Reference RestaurantsPage}, Path=BindingContext.DetailCommand}" CommandParameter="{Binding .}"/>
                                 </Frame.GestureRecognizers>
                                 <Grid ColumnDefinitions="1*,1, 2*" HeightRequest="96">
                                     <Image HeightRequest="80" Source="{Binding Logo}" Margin="10"/>

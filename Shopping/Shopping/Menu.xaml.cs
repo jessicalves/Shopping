@@ -10,6 +10,8 @@ namespace Shopping
         public Menu()
         {
             InitializeComponent();
+
+            Routing.RegisterRoute("establishment/detail", typeof(Views.EstablishmentDetail));
         }
     }
 }
