@@ -12,6 +12,7 @@ namespace Shopping
             InitializeComponent();
 
             Routing.RegisterRoute("establishment/detail", typeof(Views.EstablishmentDetail));
+            Routing.RegisterRoute("film/detail", typeof(Views.FilmDetail));
         }
     }
 }
