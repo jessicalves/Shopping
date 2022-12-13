@@ -22,7 +22,7 @@
                     <Label Text="Filme" Style="{StaticResource TitleType}" />
                     <Label Text="{Binding Film.Name}" Style="{StaticResource TitleName}" />
                     <Frame Padding="10" Margin="0, 15, 0, 15">
-                        <Label Text="{Binding Film.Description}" />
+                        <Label Text="{Binding Film.Description}" TextColor="Black" />
                     </Frame>
                     <Label Text="Sessões" Style="{StaticResource TitleType}"  />
                 </StackLayout>

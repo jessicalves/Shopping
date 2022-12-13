@@ -15,6 +15,9 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+    <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
+    <PackageReference Include="Xamarin.Forms.MaskedEntry" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -33,6 +36,10 @@
     <None Remove="Refractored.MvvmHelpers" />
     <None Remove="Libraries\Converters\" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="ZXing.Net.Mobile" />
+    <None Remove="ZXing.Net.Mobile.Forms" />
+    <None Remove="Xamarin.Forms.MaskedEntry" />
+    <None Remove="Libraries\Behaviors\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -45,6 +52,7 @@
     <Folder Include="Libraries\Helpers\" />
     <Folder Include="Libraries\Helpers\MVVM\" />
     <Folder Include="Libraries\Converters\" />
+    <Folder Include="Libraries\Behaviors\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Libraries\Fonts\Montserrat-Bold.ttf" />
