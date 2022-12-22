@@ -18,6 +18,9 @@
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
     <PackageReference Include="Xamarin.Forms.MaskedEntry" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AppCenter" Version="5.0.1" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -40,6 +43,9 @@
     <None Remove="ZXing.Net.Mobile.Forms" />
     <None Remove="Xamarin.Forms.MaskedEntry" />
     <None Remove="Libraries\Behaviors\" />
+    <None Remove="Microsoft.AppCenter.Crashes" />
+    <None Remove="Microsoft.AppCenter.Analytics" />
+    <None Remove="Microsoft.AppCenter" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
